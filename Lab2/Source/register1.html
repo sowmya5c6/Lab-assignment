@@ -80,30 +80,33 @@
         <h1> Registration successful.Enter your details to login</h1>
     </div>
     <div class="login-info">
-        <form name="form1" method="post" action="Home.html" onclick=" return validates()">
+        <form name="formname">
         <h3>Username:</h3>
-        <input type="text" placeholder="Username"/><br>
+        <input type="text" name="username" placeholder="Username"/><br>
         <h3>Password:</h3>
-        <input type="password" placeholder="Password"/>
+        <input type="password" name="password" placeholder="Password"/>
         <br>
         <br>
         <br>
-        <a href="Home.html"><input type="button" value="Sign in" class="Signin-button" style="margin-right: 30px"/></a>
+        <button type="button" action="Home.html" onclick="validates()" class="Signin-button" style="margin-right: 30px">Sign in</button>
 
         </form>
 
 
-        <br>
+
 
     </div>
 </div>
 
 <script>
-
+    function evaluate()
+    {
+        window.location.assign("Home1.html");
+    }
 
     function validates()
     { if(localStorage) {
-        form = document.forms["form1"];
+        form = document.forms["formname"];
         var formname= form["username"].value;
         var lname= localStorage.getItem("fnn");
         var lpwd = localStorage.getItem("fpp");
@@ -111,9 +114,10 @@
         if (formname==lname && formpwd==lpwd) {
 
             alert("login success");
+            evalute();
 
         }
-        else{
+        else {
             alert("Login failed check login details");
 
         }

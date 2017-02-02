@@ -80,7 +80,7 @@
         <h1> Welcome to Login Page</h1>
     </div>
     <div class="login-info">
-        <form name="form1" method="post" action="Home.html" onclick="Evaluates()">
+        <form name="formname">
         <h3>Username:</h3>
         <input type="text"  name="username" placeholder="Username"/><br>
         <h3>Password:</h3>
@@ -89,7 +89,7 @@
         <br>
         <br>
 
-            <button type="button" id="login-button">Sign in</button>
+            <button type="button" id="login-button" onclick="validates()" action="Home.html">Sign in</button>
 
 
 </form>
@@ -105,26 +105,28 @@
     </div>
 </div>
 <script>
-
-    function Evaluates()
-    {
-        if(localStorage)
-        {
-        form2 = document.forms["form1"];
-        var formname= form2["username"].value;
+function evaluate()
+{
+    window.location.assign("Home1.html");
+}
+    function validates()
+    { if(localStorage) {
+        form = document.forms["formname"];
+        var formname= form["username"].value;
         var lname= localStorage.getItem("fnn");
         var lpwd = localStorage.getItem("fpp");
-        var formpwd= form2["password"].value;
-
+        var formpwd= form["password"].value;
         if (formname==lname && formpwd==lpwd) {
-          alert("Login successfull");
-          window.location.assign("Home.html");
+
+            alert("login success");
+            evaluate();
+
         }
-        else{
-            alert("Login failed")
-            window.location.assign("index.html");
+        else {
+            alert("Login failed check login details");
+
         }
-      }
+    }
     }
 </script>
 </body>
