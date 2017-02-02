@@ -1,0 +1,22 @@
+.wrap {
+    width: 100%;
+}
+
+.frameleft {
+    float:left;
+    width: 50%;
+    height: 400px;
+}
+
+.frameright {
+    float: right;
+    height: 400px;
+    width: 40%;
+}
+
+.framemiddle{
+    float:right;
+    height:20px;
+    width:10%;
+
+}

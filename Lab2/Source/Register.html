@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+
+<html >
+<head>
+
+    <link rel="stylesheet" href="css/register.css">
+    <style>
+        body {
+            background:url('login1.jpg');
+            background-size:cover;
+        }
+
+    </style>
+
+</head>
+
+<body>
+<div class="login-page">
+    <div class="main-section">
+        <h1> Sign up for free</h1>
+    </div>
+    <div class="login-info">
+        <form  name="registerform" method="post" action="register1.html" onclick="return Evaluate()">
+        <h3>Username:</h3>
+        <input type="text"  name="uname" placeholder="Enter your username"/><br>
+        <h3>Password:</h3>
+        <input type="password" name="upwd" placeholder=" Enter your password"/><br>
+        <h3>Email:</h3>
+        <input type="text" name="umail" placeholder="Enter your email address"/><br>
+        <br>
+        <br>
+        <br>
+            <button type="submit" id="register-button">Register</button>
+        <br>
+        </form>
+    </div>
+</div>
+
+<script>
+    function Evaluate() {
+        if (localStorage) {
+
+
+
+            form = document.forms["registerform"];
+
+            var fn = form["uname"].value;
+            var fp = form["upwd"].value;
+            var fe = form["umail"].value;
+
+            localStorage.setItem('fnn', fn);
+
+            localStorage.setItem('fpp', fp);
+            localStorage.setItem('fee', fe);
+
+
+            return true;
+
+        }
+
+    }
+
+
+
+</script>
+</body>
+</html>

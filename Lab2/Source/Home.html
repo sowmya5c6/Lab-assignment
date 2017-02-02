@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="" data-ng-app="GoogleDirection">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/home.css">
+    <style>
+        body {
+            background:url('home.jpg');
+            background-size:cover;
+        }
+        .map-canvas {
+            width:100px;
+            height:250px;
+
+        }
+        fonts {
+
+            font-family:courier;
+            text-align: left;
+            font-size: medium;
+
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF24qrrGnj3NJkVKraR38G8mBfGf5Spbk&v=3.exp&sensor=true"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrapp" ng-controller="googlemapoutput">
+
+    <div class="frameleft">
+        <input type="text" placeholder="Enter Starting Point"  autocomplete="on" ng-model="startlocation" id="startlocation"/>
+        <input type="text" placeholder="Enter Destination Point"  autocomplete="on" ng-model="endlocation"  id="endlocation" />
+        <button class="button" ng-click="calcRoute()"><b>Get Direction</b></button>
+        <button class="button" ng-click="getWeather()"><b>Get Weather</b></button><br>
+        <br>
+        <br>
+        <br>
+        <div id="map-canvas" style="height:400px";></div><br><br><br>
+        <form action="index.html">
+        <button class="button">Logout</button><br>
+        </form>
+        <br/>
+        <br/>
+
+    </div>
+
+    <div class="frameright">
+        <br/>
+        <br/><br/>
+        <br><br>
+        <div data-ng-model="starttemp"></div>
+        <div data-ng-model="endtemp"></div>
+        <p class="fonts"> Temperature and climate in {{startlocation}} : {{starttemp}} &deg F  {{ weatherstart}}</p>
+        <p class="fonts"> Temperature and climate in {{endlocation}} : {{endtemp}} &deg F  {{ weatherend}} </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+<script>
+    angular.module('GoogleDirection', [])
+    .directive('googleplace', function () {
+        return {
+            require: 'ngModel',
+            link: function (scope, element, attrs, model) {
+                var options = {
+                    types: [],
+                };
+                scope.gPlace = new google.maps.places.Autocomplete(element[0],
+                    options);
+                google.maps.event.addListener(scope.gPlace, 'place_changed',
+                    function () {
+                        scope.$apply(function () {
+                            model.$setViewValue(element.val());
+                        });
+                    });
+            }
+        };
+    })
+    .controller('googlemapoutput', function ($scope, $http) {
+        var map;
+        var mapOptions;
+        var directionsDisplay = new google.maps.DirectionsRenderer({
+            draggable: true
+        });
+        var directionsService = new google.maps.DirectionsService();
+        $scope.initialize = function () {
+            var pos = new google.maps.LatLng(0, 0);
+            var mapOptions = {
+                zoom: 3,
+                center: pos
+            };
+            map = new google.maps.Map(document.getElementById('map-canvas'),
+                mapOptions);
+            <!-- Added -->
+            map.set('styles', [
+                {
+                    "featureType": "all",
+                    "stylers": [
+                        {
+                            "saturation": 0
+                        },
+                        {
+                            "hue": "#e7ecf0"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "stylers": [
+                        {
+                            "saturation": -70
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "stylers": [
+                        {
+                            "visibility": "simplified"
+                        },
+                        {
+                            "saturation": -60
+                        }
+                    ]
+                }
+            ])
+        };
+        $scope.initialize = function () {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                var pos = new google.maps.LatLng(
+                    position.coords.latitude,
+                    position.coords.longitude);
+                var mapOptions = {
+                    zoom: 16,
+                    center: pos
+                };
+                map = new google.maps.Map(document.getElementById('map-canvas'),
+                    mapOptions);
+                var marker = new google.maps.Marker({
+                    position: pos,
+                    map: map
+                });
+            });
+        };
+        $scope.calcRoute = function () {
+            var end = document.getElementById('endlocation').value;
+            var start = document.getElementById('startlocation').value;
+            var request = {
+                origin: start,
+                destination: end,
+                travelMode: google.maps.TravelMode.DRIVING
+            };
+            directionsService.route(request, function (response, status) {
+                if (status == google.maps.DirectionsStatus.OK) {
+                    directionsDisplay.setMap(map);
+                    directionsDisplay.setDirections(response);
+                    console.log(status);
+                }
+            });
+        };
+        $scope.getWeatherEnd = function () {
+            var end = document.getElementById('endlocation').value;
+            $http.get('http://api.worldweatheronline.com/free/v2/weather.ashx?q=' + end + '&key=3e0e4ae54c6e84fece9764bb38542&format=json&tp=24&num_of_days=1').success(function (data1) {
+                $scope.tempEnd = data1.data.current_condition[0].temp_F;
+                $scope.iconEnd = data1.data.current_condition[0].weatherIconUrl[0].value;
+                $scope.weatherEnd = data1.data.current_condition[0].weatherDesc[0].value;
+                $scope.feelEnd = data1.data.current_condition[0].FeelsLikeF;
+                $scope.maxTempEnd = data1.data.weather[0].maxtempF;
+                $scope.minTempEnd = data1.data.weather[0].mintempF;
+            })
+        };
+        $scope.getWeatherStart = function () {
+            var start = document.getElementById('startlocation').value;
+            $http.get('http://api.worldweatheronline.com/free/v2/weather.ashx?q=' + start + '&key=3e0e4ae54c6e84fece9764bb38542&format=json&tp=24&num_of_days=1').success(function (data1) {
+                $scope.tempStart = data1.data.current_condition[0].temp_F;
+                $scope.iconStart = data1.data.current_condition[0].weatherIconUrl[0].value;
+                $scope.weatherStart = data1.data.current_condition[0].weatherDesc[0].value;
+                $scope.feelStart = data1.data.current_condition[0].FeelsLikeF;
+                $scope.maxTempStart = data1.data.weather[0].maxtempF;
+                $scope.minTempStart = data1.data.weather[0].mintempF;
+            })
+        };
+        google.maps.event.addDomListener(window, 'load', $scope.initialize);
+    });
+    $("#menu-close").click(function (e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    $scope.getWeather = function () {
+        $http.get('http://api.openweathermap.org/data/2.5/weather?q='+document.getElementById('startlocation').value+'&appid=94bd3faff0d7c5160b8cd06d7e676e9a').success(function(data){
+            console.log(data);
+            temp2 =  data.main.temp;
+            weather2 = data.weather[0].main;
+            console.log(temp2)
+            $scope.starttemp= ((temp2 * 9/5)-459.67);
+            $scope.weatherstart = weather2;
+        });
+        $http.get('http://api.openweathermap.org/data/2.5/weather?q='+document.getElementById('endlocation').value+'&appid=94bd3faff0d7c5160b8cd06d7e676e9a').success(function(data){
+            temp1 =  data.main.temp;
+            console.log(temp1);
+            weather1 = data.weather[0].main;
+            icon = data.icon;
+            $scope.endtemp= ((temp1 * 9/5)-459.67);
+            $scope.weatherend = weather1;
+        });
+    }
+    });
+</script>
+
