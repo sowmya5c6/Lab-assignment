@@ -1,0 +1,80 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!doctype html>
+<html>
+<head>
+    <style>
+        body {
+            margin:0;
+            padding:0;
+            background:url('banner.jpg');
+            background-size:cover;
+
+
+            font-family: 'Muli', sans-serif;
+        }
+    </style>
+    <title>Registration :: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Social Login Form Widget Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- font files  -->
+    <link href='//fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- /font files  -->
+    <!-- css files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' media="all" />
+    <!-- /css files -->
+</head>
+<body>
+<h1>Registration FORM</h1>
+<div class="log">
+
+    <div class="content2 w3agile">
+        <h2>Sign Up</h2>
+        <form  name="registerform" method="post" action="home.html">
+            <input type="text" name="uname" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+            <input type="text" name="utel" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}">
+            <input type="text" name="umail" value="Email Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email Address';}">
+            <input type="password" name="upwd" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+            <input type="submit" class="register" value="Sign Up" onclick="Evaluate()">
+        </form>
+
+    </div>
+</div>
+<script>
+
+    function Evaluate() {
+        if (localStorage) {
+
+
+
+            form = document.forms["registerform"];
+
+            var fn = form["uname"].value;
+            var fp = form["upwd"].value;
+            var fe = form["umail"].value;
+            var ft = form["utel"].value;
+
+            localStorage.setItem('fnn', fn);
+            localStorage.setItem('fpp', fp);
+            localStorage.setItem('fee', fe);
+            localStorage.setItem('ftt', ft);
+
+             alert("registration success");
+
+
+        }
+
+    }
+
+
+
+</script>
+</body>
+</html>

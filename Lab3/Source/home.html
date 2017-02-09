@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My first API</title>
+    <script type="text/javascript" src="keys.js"></script>
+
+    <script src="https://npmcdn.com/axios/dist/axios.min.js"></script>
+
+    <style>body{
+        background:url(banner.jpg)no-repeat center fixed;
+        background-size: cover;
+        padding:15px;}
+    </style>
+    <style>
+        div.center{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }</style>
+    <style>
+        div.center1{
+            position: absolute;
+            left: 0;
+            top: 55%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }</style>
+    <style>
+        div.center2{
+            position: absolute;
+            left: 0;
+            top: 65%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }</style>
+</head>
+<body >
+<script>
+    function getsent()
+    {
+        var xmlhttp = new XMLHttpRequest();
+        var url = "https://api.uclassify.com/v1/uclassify/genderanalyzer_v5/classify/?readKey=zp3PVGoy6XnZ&text="+hello1;
+        xmlhttp.onreadystatechange=function() {
+            if (this.readyState == 4 && this.status == 200) {
+                myFunction(this.responseText);
+            }
+        }
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+        function myFunction(response) {
+            var obj = JSON.parse(response);
+            document.getElementById("demo").innerHTML ="male"+
+                obj.female + "Female " + obj.male;}}
+    //document.getElementById("demo").innerHTML =obj.female;
+</script>
+<div class="center">
+    <input type="text" id="imgurl" placeholder="Image URL"/>
+    <button onclick="run(document.getElementById('imgurl').value)">Get related keywords!</button>
+</div>
+<div class="center1">
+    <div terget="frame1" id="tags"></div></div><div class="center2">
+    <div id="demo"></div></div>
+
+</body >
+</html>
+<script>
+    function getCredentials(callbackFunction) {
+        var data = {
+            'grant_type': 'client_credentials',
+            'client_id': PNyRYth6i8Oa9mjek2IE4jLENn05FmnBchQ_l82c,
+            'client_secret': T0ZuaOf5kG4e4erOO5KAFDS4I6NlJguhHjC6sQCi
+
+        };
+        var url = 'https://api.clarifai.com/v1/token';
+
+        return axios.post(url, data, {
+            'transformRequest': [
+                function() {
+                    return transformDataToParams(data);
+                }
+            ]
+        }).then(function(r) {
+            localStorage.setItem('accessToken', r.data.access_token);
+            localStorage.setItem('tokenTimestamp', Math.floor(Date.now() / 1000));
+            // yolo
+            callbackFunction();
+
+        }, function(err) {
+            console.log(err);
+        });
+    }
+    function transformDataToParams(data) {
+        var str = [];
+        for (var p in data) {
+            if (data.hasOwnProperty(p) && data[p]) {
+                if (typeof data[p] === 'string'){
+                    str.push(encodeURIComponent(p) + '=' + encodeURIComponent(data[p]));
+                }
+                if (typeof data[p] === 'object'){
+                    for (var i in data[p]) {
+                        str.push(encodeURIComponent(p) + '=' + encodeURIComponent(data[p][i]));
+                    }
+                }
+            }
+        }
+        return str.join('&');
+    }
+    function postImage(imgurl) {
+        var accessToken = localStorage.getItem('accessToken');
+
+        var data = {
+            'url': imgurl
+        };
+        var url = 'https://api.clarifai.com/v1/tag';
+        return axios.post(url, data, {
+            'headers': {
+                'Authorization': 'Bearer ' + accessToken
+            }
+        }).then(function(r) {
+            // PARSE HERE
+            parseResponse(r.data);
+
+        }, function(err) {
+            console.log('Sorry, something is wrong: ' + err);
+        });
+    }
+    function parseResponse(resp) {
+        var tags = [];
+        if (resp.status_code === 'OK') {
+            var results = resp.results;
+            tags = results[0].result.tag.classes;
+        } else {
+            console.log('Sorry, something is wrong.');
+        }
+        var hello =document.getElementById('tags').innerHTML = tags.toString().replace(/,/g, ', ');
+        var hello1 = hello.toString().replace(/, /g, ' %20 ');
+        var xmlhttp = new XMLHttpRequest();
+        var url = "https://api.uclassify.com/v1/uclassify/genderanalyzer_v5/classify/?readKey=BOSEJW2mT1Di&text="+hello1;
+        xmlhttp.onreadystatechange=function() {
+            if (this.readyState == 4 && this.status == 200) {
+                myFunction(this.responseText);
+            }
+        }
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+        function myFunction(response) {
+            var obj = JSON.parse(response);
+            document.getElementById("demo").innerHTML ="male"+ obj.female + "Female " + obj.male;}
+        //window.open("https://api.uclassify.com/v1/uclassify/ageanalyzer/classify/?readKey=zp3PVGoy6XnZ&text="+hello);
+        //https://api.uclassify.com/v1/uclassify/topics/Classify?readkey=YOUR_READ_API_KEY_HERE&text=hhh  /,/g, ', '
+
+    }
+    function run(imgurl) {
+        if (Math.floor(Date.now() / 1000) - localStorage.getItem('tokenTimeStamp') > 86400 || localStorage.getItem('accessToken') === null) {
+            getCredentials(function() {
+                postImage(imgurl);
+            });
+        } else {
+            postImage(imgurl);
+        }
+    }
+</script>
