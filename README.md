@@ -9,3 +9,5 @@ Lab3 wiki:https://github.com/sowmya5c6/Lab-assignment/wiki/Lab3
 Lab4 wiki:https://github.com/sowmya5c6/Lab-assignment/wiki/Lab4
 
 Lab5 wiki:https://github.com/sowmya5c6/Lab-assignment/wiki/Lab5
+
+Lab6 wiki:https://github.com/sowmya5c6/Lab-assignment/wiki/Lab6
