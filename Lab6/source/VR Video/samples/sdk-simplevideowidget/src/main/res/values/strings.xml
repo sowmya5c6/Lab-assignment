@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+  <string name="title">Roller Coaster 3D</string>
+  <string name="subtitle">A Thrilling and surprising ride</string>
+  <string name="paragraph1">A roller coaster is an amusement ride developed for amusement parks and modern theme parks.
+
+\n\nThe 360 video below shows the roller coaster movement.
+  </string>
+
+  <string name="paragraph2">The oldest roller coasters are believed to have originated from the so-called "Russian Mountains",
+      which were specially-constructed hills of ice, located in an area that would later become St. Petersburg.[3]
+      Built in the 17th century, the slides were built to a height of between 21 and 24 m (70 and 80 feet),
+      consisted of a 50-degree drop, and were reinforced by wooden supports.
+
+\n\nA toboggan-like sled was raised to the top of a track which consisted of hundreds of rollers.
+      This Roller Toboggan then took off down gently rolling hills to the floor. The inventors of this ride,
+      Stephen E. Jackman and Byron B. Floyd, claim that they were the first to use the term "roller coaster".
+
+\n\n Many safety systems are implemented in roller coasters. One of these is the block system.
+      Most large roller coasters have the ability to run two or more trains at once, and the block system prevents these
+      trains from colliding. In this system, the track is divided into several sections, or blocks. Only one train at a time
+      is permitted in each block. At the end of each block, there is a section of track where a train can be stopped if
+      necessary (either by preventing dispatch from the station, closing brakes, or stopping a lift). Sensors at the end of
+      each block detect when a train passes so that the computer running the ride is aware of which blocks are occupied.
+      When the computer detects a train about to travel into an already occupied block, it uses whatever method is available
+      to keep it from entering. The trains are fully automated.
+  </string>
+
+  <string name="source">Source &lt;<a href="https://en.wikipedia.org/wiki/Roller_coaster"/>Wiki;</string>
+</resources>

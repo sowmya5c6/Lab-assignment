@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/exploded-aar/com.google.vr/sdk-audio/1.20.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d8524a9272bddeed0a2f9e1603e8ce11925e7c40">
+        <dex dex="/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/pre-dexed/debug/com.google.vr-sdk-audio-1.20.0_58026f6c34ff819c6343123c9459cb2dac7c86d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sowmya/gvr-android-sdk/samples/sdk-videoplayer/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67403bd58f399f39aa47e5e186d4f94c0e1322a2">
+        <dex dex="/home/sowmya/gvr-android-sdk/samples/sdk-videoplayer/build/intermediates/pre-dexed/debug/com.google.vr-sdk-common-1.20.0_90feea20f85f02ba803a82030d6b635db618822d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="374ac1b3d9f5a3418b8d219c5f9569d8f76302d7">
+        <dex dex="/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/build/intermediates/pre-dexed/debug/com.google.android.exoplayer-exoplayer-r2.1.0_f2df28629771d59a2b5ffd245fc2d00c50a8b651.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sowmya/gvr-android-sdk/samples/sdk-videoplayer/build/intermediates/exploded-aar/com.google.vr/sdk-base/1.20.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4f6770ee13216c2d96bb83bbd1c99a3110f8a0ab">
+        <dex dex="/home/sowmya/gvr-android-sdk/samples/sdk-videoplayer/build/intermediates/pre-dexed/debug/com.google.vr-sdk-base-1.20.0_d6075dcd93d68d2279c11f286faab6f73da6c3ee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/build/intermediates/exploded-aar/com.google.vr/sdk-commonwidget/1.20.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d4d5c35a22b8e4563afeb030eb16f137717503d1">
+        <dex dex="/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/build/intermediates/pre-dexed/debug/com.google.vr-sdk-commonwidget-1.20.0_85f8b304b1e3b68bfb7d598c78acd076e39aea90.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sowmya/gvr-android-sdk/samples/sdk-controllerclient/build/intermediates/exploded-aar/com.google.vr/sdk-controller/1.20.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5fcca385bbf6776d1f986911455653982a74717b">
+        <dex dex="/home/sowmya/gvr-android-sdk/samples/sdk-controllerclient/build/intermediates/pre-dexed/debug/com.google.vr-sdk-controller-1.20.0_3b7d7075bfe0d28426cb658e415d34eeb095bc28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/exploded-aar/com.google.vr/sdk-base/1.20.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4f6770ee13216c2d96bb83bbd1c99a3110f8a0ab">
+        <dex dex="/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/pre-dexed/debug/com.google.vr-sdk-base-1.20.0_1ab68baa933e41c539e7800fc8bdfb2f5223d1c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67403bd58f399f39aa47e5e186d4f94c0e1322a2">
+        <dex dex="/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/pre-dexed/debug/com.google.vr-sdk-common-1.20.0_08059bf33707618457722a911d36ddaa679cb7a7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sowmya/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_2074d2bc7102b0d93fc23e79bad019d5d768e9b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sowmya/gvr-android-sdk/samples/sdk-controllerclient/build/intermediates/exploded-aar/com.google.vr/sdk-base/1.20.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4f6770ee13216c2d96bb83bbd1c99a3110f8a0ab">
+        <dex dex="/home/sowmya/gvr-android-sdk/samples/sdk-controllerclient/build/intermediates/pre-dexed/debug/com.google.vr-sdk-base-1.20.0_f78f962624435c9b245c0de3d81efd6807bbb8ba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sowmya/gvr-android-sdk/samples/sdk-videoplayer/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r1.5.10/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3d2ea9cdd5b272666e03c7977440b494b63db77c">
+        <dex dex="/home/sowmya/gvr-android-sdk/samples/sdk-videoplayer/build/intermediates/pre-dexed/debug/com.google.android.exoplayer-exoplayer-r1.5.10_a6e91f03561e8b315afcff9777eb9d12f8d65b94.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sowmya/.gradle/caches/modules-2/files-2.1/com.google.protobuf.nano/protobuf-javanano/3.1.0/5110f05deac8f15244897b3f70e9ce413468771d/protobuf-javanano-3.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5110f05deac8f15244897b3f70e9ce413468771d">
+        <dex dex="/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/pre-dexed/debug/protobuf-javanano-3.1.0_6f43fbcb7c2cd41cfd20a8fb8cd2ff5d4befe851.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sowmya/gvr-android-sdk/samples/sdk-controllerclient/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67403bd58f399f39aa47e5e186d4f94c0e1322a2">
+        <dex dex="/home/sowmya/gvr-android-sdk/samples/sdk-controllerclient/build/intermediates/pre-dexed/debug/com.google.vr-sdk-common-1.20.0_629901e615a479c75b12922c8276db6ee4baad2a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/exploded-aar/com.google.vr/sdk-commonwidget/1.20.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d4d5c35a22b8e4563afeb030eb16f137717503d1">
+        <dex dex="/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/pre-dexed/debug/com.google.vr-sdk-commonwidget-1.20.0_6050e5b0b49146e4504717d23c7346c5c721f7c2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67403bd58f399f39aa47e5e186d4f94c0e1322a2">
+        <dex dex="/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/pre-dexed/debug/com.google.vr-sdk-common-1.20.0_da49f331dc27a70d975a75a8b317462852ff359a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67403bd58f399f39aa47e5e186d4f94c0e1322a2">
+        <dex dex="/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/build/intermediates/pre-dexed/debug/com.google.vr-sdk-common-1.20.0_842788fbcd87add773381c4b1cc79b9b9a1c2c96.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/build/intermediates/exploded-aar/com.google.vr/sdk-videowidget/1.20.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7db3e3666e3a6055dd70f86d0f1063209cbb3db4">
+        <dex dex="/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/build/intermediates/pre-dexed/debug/com.google.vr-sdk-videowidget-1.20.0_44e7fc14e5ae691c08975693135a548d087523cf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="374ac1b3d9f5a3418b8d219c5f9569d8f76302d7">
+        <dex dex="/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/pre-dexed/debug/com.google.android.exoplayer-exoplayer-r2.1.0_dadc47d5ae743f00abd07782e0535fa1c1617173.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/exploded-aar/com.google.vr/sdk-videowidget/1.20.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7db3e3666e3a6055dd70f86d0f1063209cbb3db4">
+        <dex dex="/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/pre-dexed/debug/com.google.vr-sdk-videowidget-1.20.0_e5516ddba7195f0f06337cf332c2826694ddf046.jar" />
+    </item>
+
+</items>

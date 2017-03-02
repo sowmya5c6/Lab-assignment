@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/build/intermediates/res/merged/debug/layout-ldrtl-land-v17/back_button.xml",
+        "source": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/layout-ldrtl-land-v17/back_button.xml"
+    },
+    {
+        "merged": "/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/res/merged/debug/layout-ldrtl-land-v17/back_button.xml",
+        "source": "/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/layout-ldrtl-land-v17/back_button.xml"
+    },
+    {
+        "merged": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/build/intermediates/res/merged/debug/layout-ldrtl-land-v17/settings_button.xml",
+        "source": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/layout-ldrtl-land-v17/settings_button.xml"
+    },
+    {
+        "merged": "/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/res/merged/debug/layout-ldrtl-land-v17/settings_button.xml",
+        "source": "/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/layout-ldrtl-land-v17/settings_button.xml"
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/layout/ui_layer.xml",
+        "source": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/layout/ui_layer.xml"
+    },
+    {
+        "merged": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/layout/settings_button.xml",
+        "source": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/layout/settings_button.xml"
+    },
+    {
+        "merged": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/layout/transition_view.xml",
+        "source": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/layout/transition_view.xml"
+    },
+    {
+        "merged": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/layout/ui_layer_with_portrait_support.xml",
+        "source": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/layout/ui_layer_with_portrait_support.xml"
+    },
+    {
+        "merged": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/layout/common_ui.xml",
+        "source": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/src/main/res/layout/common_ui.xml"
+    },
+    {
+        "merged": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/layout/back_button.xml",
+        "source": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/layout/back_button.xml"
+    },
+    {
+        "merged": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/layout/back_button.xml",
+        "source": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/layout/back_button.xml"
+    },
+    {
+        "merged": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/layout/ui_layer.xml",
+        "source": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/layout/ui_layer.xml"
+    },
+    {
+        "merged": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/layout/ui_layer_with_portrait_support.xml",
+        "source": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/layout/ui_layer_with_portrait_support.xml"
+    },
+    {
+        "merged": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/layout/common_ui.xml",
+        "source": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/src/main/res/layout/common_ui.xml"
+    },
+    {
+        "merged": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/layout/transition_view.xml",
+        "source": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/layout/transition_view.xml"
+    },
+    {
+        "merged": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/layout/settings_button.xml",
+        "source": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/layout/settings_button.xml"
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/res/merged/debug/drawable-hdpi/volume_on.png",
+        "source": "/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/src/main/res/drawable-hdpi/volume_on.png"
+    },
+    {
+        "merged": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/build/intermediates/res/merged/debug/drawable-hdpi/volume_off.png",
+        "source": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/src/main/res/drawable-hdpi/volume_off.png"
+    },
+    {
+        "merged": "/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/res/merged/debug/drawable-hdpi/volume_off.png",
+        "source": "/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/src/main/res/drawable-hdpi/volume_off.png"
+    },
+    {
+        "merged": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/build/intermediates/res/merged/debug/drawable-hdpi/volume_on.png",
+        "source": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/src/main/res/drawable-hdpi/volume_on.png"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/raw/grid_fragment.shader",
+        "source": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/src/main/res/raw/grid_fragment.shader"
+    },
+    {
+        "merged": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/raw/light_vertex.shader",
+        "source": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/src/main/res/raw/light_vertex.shader"
+    },
+    {
+        "merged": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/raw/passthrough_fragment.shader",
+        "source": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/src/main/res/raw/passthrough_fragment.shader"
+    },
+    {
+        "merged": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/raw/grid_fragment.shader",
+        "source": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/src/main/res/raw/grid_fragment.shader"
+    },
+    {
+        "merged": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/raw/passthrough_fragment.shader",
+        "source": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/src/main/res/raw/passthrough_fragment.shader"
+    },
+    {
+        "merged": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/raw/light_vertex.shader",
+        "source": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/src/main/res/raw/light_vertex.shader"
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/drawable-nodpi/vr_icon_background.png",
+        "source": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/src/main/res/drawable-nodpi/vr_icon_background.png"
+    },
+    {
+        "merged": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/drawable-nodpi/vr_icon.png",
+        "source": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/src/main/res/drawable-nodpi/vr_icon.png"
+    },
+    {
+        "merged": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/drawable-nodpi/vr_icon.png",
+        "source": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/src/main/res/drawable-nodpi/vr_icon.png"
+    },
+    {
+        "merged": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/drawable-nodpi/vr_icon_background.png",
+        "source": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/src/main/res/drawable-nodpi/vr_icon_background.png"
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/drawable/rippleable.xml",
+        "source": "/home/sowmya/gvr-android-sdk/samples/sdk-treasurehunt/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/drawable/rippleable.xml"
+    },
+    {
+        "merged": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/build/intermediates/res/merged/debug/drawable/rippleable.xml",
+        "source": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-treasurehunt/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/drawable/rippleable.xml"
+    }
+]

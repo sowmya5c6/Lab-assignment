@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/res/merged/debug/layout-land/back_button.xml",
+        "source": "/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/layout-land/back_button.xml"
+    },
+    {
+        "merged": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/build/intermediates/res/merged/debug/layout-land/ui_layer_with_portrait_support.xml",
+        "source": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/layout-land/ui_layer_with_portrait_support.xml"
+    },
+    {
+        "merged": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/build/intermediates/res/merged/debug/layout-land/back_button.xml",
+        "source": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/layout-land/back_button.xml"
+    },
+    {
+        "merged": "/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/res/merged/debug/layout-land/ui_layer_with_portrait_support.xml",
+        "source": "/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/layout-land/ui_layer_with_portrait_support.xml"
+    },
+    {
+        "merged": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/build/intermediates/res/merged/debug/layout-land/settings_button.xml",
+        "source": "/home/sowmya/AndroidStudioProjects/googlecardboard/samples/sdk-simplevideowidget/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/layout-land/settings_button.xml"
+    },
+    {
+        "merged": "/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/res/merged/debug/layout-land/settings_button.xml",
+        "source": "/home/sowmya/gvr-android-sdk/samples/sdk-simplevideowidget/build/intermediates/exploded-aar/com.google.vr/sdk-common/1.20.0/res/layout-land/settings_button.xml"
+    }
+]
