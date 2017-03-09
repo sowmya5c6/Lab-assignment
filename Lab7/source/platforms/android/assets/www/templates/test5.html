@@ -1,0 +1,33 @@
+<ion-nav-view view-title="WELCOME TO HOME PAGE" style="background: url(../templates/milkyway.jpg); background-size: cover ">
+  <ion-title>
+    <h1>Home</h1>
+  </ion-title>
+  <ion-content class="home" scroll="false">
+    <ion-card>
+      <ion-card-header>
+        <h4>Home page</h4>
+      </ion-card-header>
+      <ion-card-content>
+        <h1>HOME PAGE</h1>
+      </ion-card-content>
+    </ion-card>
+    <div class="list list-inset">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="search" ng-model="search">
+      </label>
+    </div>
+    <div class="list list-inset" ng-model="contents">
+      {{contents}}
+    </div>
+    <button class="button button-positive" ng-click="init()">
+      Show Results!!
+    </button>
+    <button class="button button-positive" ng-click="init2()">
+      Try Another Search
+    </button>
+      <button class="button button-positive">
+      Speak
+    </button>
+  </ion-content>
+</ion-nav-view>

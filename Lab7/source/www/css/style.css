@@ -1,0 +1,13 @@
+.background.scroll-content {
+  background: url('../templates/im.jpg') no-repeat;
+  background-size: cover;
+}
+.home.scroll-content {
+  background: url('../templates/milkyway.jpg') no-repeat;
+  background-size: cover;
+}
+.padding.scroll-content {
+  background: url('../templates/milkyway.jpg') no-repeat;
+  background-size: cover;
+}
+
