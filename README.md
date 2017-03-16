@@ -14,5 +14,11 @@ Lab6 wiki:https://github.com/sowmya5c6/Lab-assignment/wiki/Lab6
 
 Lab7 wiki:https://github.com/sowmya5c6/Lab-assignment/wiki/Lab7
 
+Lab8 wiki:https://github.com/sowmya5c6/Lab-assignment/wiki/Lab8
 
 
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> 1f246ca8e15bf554430a7753cef65d5e3a1ef023
