@@ -1,0 +1,33 @@
+<ion-nav-view style="background: url(../templates/lab83.jpg); background-size: cover ">
+  <ion-title>
+    <h1>Home</h1>
+  </ion-title>
+  <ion-content class="home" scroll="false">
+    <ion-card>
+      <ion-card-header>
+        <h4>Home page</h4>
+      </ion-card-header>
+      <ion-card-content>
+        <h1></h1>
+      </ion-card-content>
+    </ion-card>
+    <div class="list list-inset">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="search" ng-model="search">
+      </label>
+    </div>
+    <div class="list list-inset" ng-model="contents">
+      {{contents}}
+    </div>
+    <button class="button button-positive" ng-click="init()">
+      Get Details!!
+    </button>
+    <button class="button button-positive" ng-click="init2()">
+      Try other 
+    </button>
+      <button class="button button-positive" ng-click="init3()">
+      Get Speech
+    </button>
+  </ion-content>
+</ion-nav-view>
