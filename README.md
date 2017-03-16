@@ -14,5 +14,7 @@ Lab6 wiki:https://github.com/sowmya5c6/Lab-assignment/wiki/Lab6
 
 Lab7 wiki:https://github.com/sowmya5c6/Lab-assignment/wiki/Lab7
 
+Lab8 wiki:https://github.com/sowmya5c6/Lab-assignment/wiki/Lab8
+
 
 
